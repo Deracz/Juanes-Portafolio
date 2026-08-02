@@ -13,14 +13,7 @@ const themeLabel = document.querySelector('.theme-label');
 const typewriterTarget = document.getElementById('typewriter-text');
 const counters = document.querySelectorAll('.counter');
 
-const typewriterPhrases = [
-    'Java Full Stack Developer',
-    'Software Developer',
-    'Problem Solver',
-    'Currently pursuing ASIR studies in Madrid, Spain.',
-    'Tech Enthusiast'
-];
-
+let typewriterPhrases = [];
 let currentPhraseIndex = 0;
 let currentCharIndex = 0;
 let isDeleting = false;
@@ -54,6 +47,11 @@ function applyLanguage(language) {
 
     if (!translationMap) return;
 
+    typewriterPhrases = translationMap.hero?.typewriterPhrases || [];
+    currentPhraseIndex = 0;
+    currentCharIndex = 0;
+    isDeleting = false;
+
     document.querySelectorAll('[data-i18n]').forEach(element => {
         const keyPath = element.getAttribute('data-i18n');
         const value = keyPath.split('.').reduce((obj, key) => obj?.[key], translationMap);
@@ -69,6 +67,10 @@ function applyLanguage(language) {
 
     localStorage.setItem('portfolio-language', language);
     setTheme(localStorage.getItem('portfolio-theme') || 'light');
+    if (typewriterTarget) {
+        typewriterTarget.textContent = '';
+        typewriterLoop();
+    }
 }
 
 // ==========================================
@@ -106,7 +108,14 @@ revealItems.forEach(item => revealObserver.observe(item));
 // Typewriter effect in hero section
 // ==========================================
 function typewriterLoop() {
-    const currentPhrase = typewriterPhrases[currentPhraseIndex];
+    const phrases = typewriterPhrases.length ? typewriterPhrases : [
+        'Java Full Stack Developer',
+        'Software Developer',
+        'Problem Solver',
+        'Future ASIR graduate in Madrid, Spain',
+        'Tech Enthusiast'
+    ];
+    const currentPhrase = phrases[currentPhraseIndex];
 
     if (!isDeleting) {
         currentCharIndex++;
@@ -123,7 +132,7 @@ function typewriterLoop() {
 
         if (currentCharIndex === 0) {
             isDeleting = false;
-            currentPhraseIndex = (currentPhraseIndex + 1) % typewriterPhrases.length;
+            currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
         }
     }
 
@@ -209,6 +218,4 @@ languageButtons.forEach(button => {
 // ==========================================
 setTheme(storedTheme);
 applyLanguage(storedLanguage);
-
-typewriterTarget && typewriterLoop();
 

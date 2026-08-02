@@ -16,7 +16,14 @@ window.translations = {
             location: 'Madrid, España',
             story: 'Java Full Stack Developer de Colombia, ahora construyendo mi camino en Madrid.',
             cv: 'Descargar CV',
-            typewriterLabel: 'Java Full Stack Developer'
+            typewriterLabel: 'Java Full Stack Developer',
+            typewriterPhrases: [
+                'Desarrollador Full Stack Java',
+                'Desarrollador de Software',
+                'Solucionador de problemas',
+                'Futuro graduado en ASIR en Madrid, España',
+                'Entusiasta de la tecnología'
+            ]
         },
         about: {
             tag: 'Sobre mí',
@@ -105,7 +112,14 @@ window.translations = {
             location: 'Madrid, Spain',
             story: 'Java Full Stack Developer from Colombia, now building my path in Madrid.',
             cv: 'Download CV',
-            typewriterLabel: 'Java Full Stack Developer'
+            typewriterLabel: 'Java Full Stack Developer',
+            typewriterPhrases: [
+                'Java Full Stack Developer',
+                'Software Developer',
+                'Problem Solver',
+                'Future ASIR graduate in Madrid, Spain',
+                'Tech Enthusiast'
+            ]
         },
         about: {
             tag: 'About me',
