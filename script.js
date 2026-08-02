@@ -10,7 +10,6 @@ const scrollTopBtn = document.getElementById('scrollTopBtn');
 const languageButtons = document.querySelectorAll('.lang-btn');
 const themeToggle = document.querySelector('.theme-toggle');
 const themeLabel = document.querySelector('.theme-label');
-const themeIcon = document.querySelector('.theme-icon');
 const typewriterTarget = document.getElementById('typewriter-text');
 const counters = document.querySelectorAll('.counter');
 
@@ -18,7 +17,7 @@ const typewriterPhrases = [
     'Java Full Stack Developer',
     'Software Developer',
     'Problem Solver',
-    'Future ASIR Student',
+    'Currently pursuing ASIR studies in Madrid, Spain.',
     'Tech Enthusiast'
 ];
 
@@ -36,13 +35,11 @@ let currentLanguage = storedLanguage;
 
 function setTheme(theme) {
     document.body.classList.toggle('dark-mode', theme === 'dark');
-    if (themeLabel && themeIcon) {
+    if (themeLabel) {
         const translations = window.translations?.[currentLanguage] || window.translations?.en;
         if (theme === 'dark') {
-            themeIcon.textContent = '🌙';
             themeLabel.textContent = translations?.theme?.dark || 'Dark Mode';
         } else {
-            themeIcon.textContent = '☀️';
             themeLabel.textContent = translations?.theme?.light || 'Light Mode';
         }
     }

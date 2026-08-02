@@ -14,24 +14,26 @@ window.translations = {
         hero: {
             eyebrow: 'Portfolio personal',
             location: 'Madrid, España',
+            story: 'Java Full Stack Developer de Colombia, ahora construyendo mi camino en Madrid.',
             cv: 'Descargar CV',
             typewriterLabel: 'Java Full Stack Developer'
         },
         about: {
             tag: 'Sobre mí',
-            title: 'Desarrollo soluciones claras, escalables y útiles.',
-            p1: 'Soy un desarrollador Java Full Stack originario de Colombia, actualmente residiendo en Madrid, España. Mi experiencia en soporte técnico, análisis de riesgos y desarrollo me ha permitido combinar rigor técnico, pensamiento analítico y comunicación efectiva.',
-            p2: 'Me interesa crear aplicaciones eficientes, bien estructuradas y con una experiencia de usuario cuidada. Además, disfruto aprender de forma constante y aportar valor en entornos colaborativos.'
+            title: 'De Colombia a Madrid, construyendo una carrera técnica con propósito.',
+            p1: 'Soy Juan Esteban Oviedo Estepa, desarrollador Java Full Stack de Colombia, actualmente viviendo en Madrid, España. Completé el bootcamp de Generation Colombia y ahora sigo creciendo en el desarrollo de software, bases de datos, cloud y arquitectura tecnológica.',
+            p2: 'Mi camino no empezó solo en código: también trabajé en soporte al cliente, análisis de riesgos y roles relacionados con tecnología. Eso me ayudó a desarrollar una mentalidad práctica, de comunicación y resolución de problemas que hoy aplica en cada proyecto que construyo.',
+            p3: 'Hablo español, inglés y alemán de forma progresiva, y mi objetivo es seguir creciendo profesionalmente en Europa con una base sólida en backend, frontend y operaciones tecnológicas.'
         },
         skills: {
             tag: 'Habilidades',
-            title: 'Un stack práctico y orientado al producto.',
+            title: 'Tecnología con enfoque práctico, constante y orientado al producto.',
             frontend: 'Frontend',
             backend: 'Backend',
             tools: 'Herramientas',
-            frontendText: 'HTML, CSS, JavaScript, Bootstrap, diseño responsive.',
-            backendText: 'Java, APIs REST, OOP, fundamentos de Spring Boot.',
-            toolsText: 'Git, GitHub, VS Code, IntelliJ, flujo de trabajo ágil.'
+            frontendText: 'HTML, CSS, JavaScript y Bootstrap para construir interfaces limpias, accesibles y responsivas.',
+            backendText: 'Java, OOP, APIs REST, fundamentos de Spring Boot y lógica de negocio aplicada a soluciones reales.',
+            toolsText: 'Git, GitHub, VS Code, IntelliJ, SQL y trabajo en equipo con una mentalidad de aprendizaje continuo.'
         },
         projects: {
             tag: 'Proyectos',
@@ -57,7 +59,7 @@ window.translations = {
         },
         experience: {
             tag: 'Experiencia',
-            title: 'Trayectoria técnica y de soporte.',
+            title: 'Una trayectoria construida en soporte, análisis y desarrollo.',
             companies: [
                 { name: 'Anthology', role: 'IT Support Specialist' },
                 { name: 'Stripe', role: 'System Technician' },
@@ -66,12 +68,12 @@ window.translations = {
         },
         reflection: {
             tag: 'Reflexión',
-            title: 'Aprendizaje constante, disciplina y curiosidad.',
-            p: 'Durante este bootcamp aprendí no solo habilidades técnicas, sino también disciplina, trabajo en equipo y resolución de problemas. Aún tengo mucho por mejorar, especialmente en backend, pero me comprometo a dominar Java, Spring Boot y soluciones escalables. Este camino me ha demostrado que el crecimiento viene de la constancia y la curiosidad.'
+            title: 'Aprender con constancia, crecer con propósito.',
+            p: 'El bootcamp de Generation Colombia me ayudó a entender que el desarrollo no es solo escribir código, sino construir soluciones con criterio, disciplina y colaboración. Desde entonces he seguido aprendiendo con intensidad: más backend, mejores fundamentos, más inquietud por bases de datos, cloud y sistemas más sólidos. Mi camino en Madrid me ha dado una nueva brújula y una clara intención: seguir desarrollándome como profesional técnico en Europa, con una base que combine ingeniería, comunicación y curiosidad.'
         },
         contact: {
             tag: 'Contacto',
-            title: 'Hablemos de tu próximo proyecto.',
+            title: 'Si buscas a alguien curioso, constante y con ganas de crecer, aquí estoy.',
             button: 'Contactame',
             email: 'juanesoviedoestepa@gmail.com'
         },
@@ -82,8 +84,8 @@ window.translations = {
             years: 'Años de experiencia'
         },
         theme: {
-            light: '☀️ Modo claro',
-            dark: '🌙 Modo oscuro'
+            light: 'Modo claro',
+            dark: 'Modo oscuro'
         },
         langToggle: '🇪🇸 ES | 🇬🇧 EN'
     },
@@ -101,24 +103,26 @@ window.translations = {
         hero: {
             eyebrow: 'Personal portfolio',
             location: 'Madrid, Spain',
+            story: 'Java Full Stack Developer from Colombia, now building my path in Madrid.',
             cv: 'Download CV',
             typewriterLabel: 'Java Full Stack Developer'
         },
         about: {
             tag: 'About me',
-            title: 'Building clear, scalable and useful solutions.',
-            p1: 'I am a Java Full Stack Developer from Colombia, currently based in Madrid, Spain. My experience in technical support, risk analysis and software development has helped me combine strong technical rigor, analytical thinking and effective communication.',
-            p2: 'I am interested in creating efficient, well-structured applications with a polished user experience. I also enjoy continual learning and adding value in collaborative environments.'
+            title: 'From Colombia to Madrid, building a technical career with purpose.',
+            p1: 'My name is Juan Esteban Oviedo Estepa, a Java Full Stack Developer from Colombia, currently living in Madrid, Spain. I completed the Generation Colombia bootcamp and I am now continuing to grow in software development, databases, cloud technologies and technical architecture.',
+            p2: 'My path did not begin only in code. I have also worked in customer support, risk analysis and technology-related roles, which helped me build a practical mindset, strong communication skills and a steady problem-solving approach.',
+            p3: 'I speak Spanish, English and German at different levels, and my goal is to keep growing professionally in Europe with a strong foundation in backend, frontend and technical operations.'
         },
         skills: {
             tag: 'Skills',
-            title: 'A practical stack focused on product value.',
+            title: 'Technology with a practical, steady and product-oriented mindset.',
             frontend: 'Frontend',
             backend: 'Backend',
             tools: 'Tools',
-            frontendText: 'HTML, CSS, JavaScript, Bootstrap, responsive design.',
-            backendText: 'Java, REST APIs, OOP, fundamentals of Spring Boot.',
-            toolsText: 'Git, GitHub, VS Code, IntelliJ, agile workflow.'
+            frontendText: 'HTML, CSS, JavaScript and Bootstrap to build clean, accessible and responsive interfaces.',
+            backendText: 'Java, OOP, REST APIs, fundamentals of Spring Boot and business logic applied to real solutions.',
+            toolsText: 'Git, GitHub, VS Code, IntelliJ, SQL and teamwork with a continuous-learning mindset.'
         },
         projects: {
             tag: 'Projects',
@@ -144,7 +148,7 @@ window.translations = {
         },
         experience: {
             tag: 'Experience',
-            title: 'Technical and support journey.',
+            title: 'A journey built through support, analysis and development.',
             companies: [
                 { name: 'Anthology', role: 'IT Support Specialist' },
                 { name: 'Stripe', role: 'System Technician' },
@@ -153,12 +157,12 @@ window.translations = {
         },
         reflection: {
             tag: 'Reflection',
-            title: 'Continuous learning, discipline and curiosity.',
-            p: 'During this bootcamp I learned not only technical skills, but also discipline, teamwork and problem solving. I still have a lot to improve, especially in backend, but I am committed to mastering Java, Spring Boot and scalable solutions. This journey has shown me that growth comes from consistency and curiosity.'
+            title: 'Learning with consistency, growing with purpose.',
+            p: 'The Generation Colombia bootcamp helped me understand that development is not only about writing code, but about building solutions with judgment, discipline and collaboration. Since then, I have kept learning with intensity: more backend, stronger foundations, and greater curiosity about databases, cloud and more solid systems. My path in Madrid has given me a new compass and a clear intention: to keep evolving as a technical professional in Europe with a foundation that combines engineering, communication and curiosity.'
         },
         contact: {
             tag: 'Contact',
-            title: 'Let’s talk about your next project.',
+            title: 'If you are looking for someone curious, consistent and eager to keep growing, I am here.',
             button: 'Contact me',
             email: 'juanesoviedoestepa@gmail.com'
         },
@@ -169,8 +173,8 @@ window.translations = {
             years: 'Years of experience'
         },
         theme: {
-            light: '☀️ Light Mode',
-            dark: '🌙 Dark Mode'
+            light: 'Light Mode',
+            dark: 'Dark Mode'
         },
         langToggle: '🇪🇸 ES | 🇬🇧 EN'
     }
