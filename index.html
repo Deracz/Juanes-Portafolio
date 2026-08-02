@@ -5,18 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan Oviedo | Portfolio</title>
-    <meta name="description" content="Portfolio profesional de Juan Esteban Oviedo Estepa, Java Full Stack Developer en Madrid, España.">
+    <meta name="description"
+        content="Portfolio profesional de Juan Esteban Oviedo Estepa, Java Full Stack Developer en Madrid, España.">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="site-header">
         <div class="container nav-wrap">
-            <a href="#inicio" class="brand">Juan Oviedo</a>
+            <a href="#inicio" class="brand" data-i18n="brand">Juan Oviedo</a>
+
+            <div class="header-actions">
+                <div class="language-switch" aria-label="language selector">
+                    <button type="button" class="lang-btn" data-lang="es">🇪🇸 ES</button>
+                    <button type="button" class="lang-btn" data-lang="en">🇬🇧 EN</button>
+                </div>
+
+                <button class="theme-toggle" type="button" aria-label="theme switch">
+                    <span class="theme-icon">☀️</span>
+                    <span class="theme-label" data-i18n="theme.light">☀️ Light Mode</span>
+                </button>
+            </div>
 
             <button class="menu-toggle" aria-label="Abrir menú">
                 <span></span>
@@ -25,13 +40,13 @@
             </button>
 
             <nav class="site-nav">
-                <a href="#inicio">Inicio</a>
-                <a href="#sobre-mi">Sobre mí</a>
-                <a href="#habilidades">Habilidades</a>
-                <a href="#proyectos">Proyectos</a>
-                <a href="#experiencia">Experiencia</a>
-                <a href="#reflexion">Reflexión</a>
-                <a href="#contacto">Contacto</a>
+                <a href="#inicio" data-i18n="nav.inicio">Inicio</a>
+                <a href="#sobre-mi" data-i18n="nav.sobreMi">Sobre mí</a>
+                <a href="#habilidades" data-i18n="nav.habilidades">Habilidades</a>
+                <a href="#proyectos" data-i18n="nav.proyectos">Proyectos</a>
+                <a href="#experiencia" data-i18n="nav.experiencia">Experiencia</a>
+                <a href="#reflexion" data-i18n="nav.reflexion">Reflexión</a>
+                <a href="#contacto" data-i18n="nav.contacto">Contacto</a>
             </nav>
         </div>
     </header>
@@ -44,15 +59,19 @@
                 </div>
 
                 <div class="hero-copy reveal">
-                    <p class="eyebrow">Portfolio personal</p>
+                    <p class="eyebrow" data-i18n="hero.eyebrow">Portfolio personal</p>
                     <h1>Juan Esteban Oviedo Estepa</h1>
-                    <h2>Java Full Stack Developer</h2>
-                    <p class="location">Madrid, España</p>
+                    <h2>
+                        <span id="typewriter-text" class="typewriter-text"></span>
+                    </h2>
+                    <p class="location" data-i18n="hero.location">Madrid, España</p>
 
                     <div class="hero-actions">
-                        <a href="https://github.com/Deracz" target="_blank" rel="noreferrer" class="btn btn-dark">GitHub</a>
-                        <a href="https://www.linkedin.com/in/juanesoviedo-it-support/" target="_blank" rel="noreferrer" class="btn btn-light">LinkedIn</a>
-                        <a href="European CV.pdf" download class="btn btn-accent">Descargar CV</a>
+                        <a href="https://github.com/Deracz" target="_blank" rel="noreferrer"
+                            class="btn btn-dark">GitHub</a>
+                        <a href="https://www.linkedin.com/in/juanesoviedo-it-support/" target="_blank" rel="noreferrer"
+                            class="btn btn-light">LinkedIn</a>
+                        <a href="European CV.pdf" download class="btn btn-accent" data-i18n="hero.cv">Descargar CV</a>
                     </div>
                 </div>
             </div>
@@ -61,18 +80,21 @@
         <section id="sobre-mi" class="section">
             <div class="container section-inner reveal">
                 <div class="section-title">
-                    <p class="section-tag">Sobre mí</p>
-                    <h2>Desarrollo soluciones claras, escalables y útiles.</h2>
+                    <p class="section-tag" data-i18n="about.tag">Sobre mí</p>
+                    <h2 data-i18n="about.title">Desarrollo soluciones claras, escalables y útiles.</h2>
                 </div>
 
                 <div class="content-card">
-                    <p>
-                        Soy un desarrollador Java Full Stack originario de Colombia, actualmente residiendo en Madrid, España.
-                        Mi experiencia en soporte técnico, análisis de riesgos y desarrollo me ha permitido combinar rigor técnico,
+                    <p data-i18n="about.p1">
+                        Soy un desarrollador Java Full Stack originario de Colombia, actualmente residiendo en Madrid,
+                        España.
+                        Mi experiencia en soporte técnico, análisis de riesgos y desarrollo me ha permitido combinar
+                        rigor técnico,
                         pensamiento analítico y comunicación efectiva.
                     </p>
-                    <p>
-                        Me interesa crear aplicaciones eficientes, bien estructuradas y con una experiencia de usuario cuidada.
+                    <p data-i18n="about.p2">
+                        Me interesa crear aplicaciones eficientes, bien estructuradas y con una experiencia de usuario
+                        cuidada.
                         Además, disfruto aprender de forma constante y aportar valor en entornos colaborativos.
                     </p>
                 </div>
@@ -82,24 +104,24 @@
         <section id="habilidades" class="section section-soft">
             <div class="container reveal">
                 <div class="section-title center">
-                    <p class="section-tag">Habilidades</p>
-                    <h2>Un stack práctico y orientado al producto.</h2>
+                    <p class="section-tag" data-i18n="skills.tag">Habilidades</p>
+                    <h2 data-i18n="skills.title">Un stack práctico y orientado al producto.</h2>
                 </div>
 
                 <div class="skills-grid">
                     <article class="skill-card">
-                        <h3>Frontend</h3>
-                        <p>HTML, CSS, JavaScript, Bootstrap, diseño responsive.</p>
+                        <h3 data-i18n="skills.frontend">Frontend</h3>
+                        <p data-i18n="skills.frontendText">HTML, CSS, JavaScript, Bootstrap, diseño responsive.</p>
                     </article>
 
                     <article class="skill-card">
-                        <h3>Backend</h3>
-                        <p>Java, APIs REST, OOP, fundamentos de Spring Boot.</p>
+                        <h3 data-i18n="skills.backend">Backend</h3>
+                        <p data-i18n="skills.backendText">Java, APIs REST, OOP, fundamentos de Spring Boot.</p>
                     </article>
 
                     <article class="skill-card">
-                        <h3>Herramientas</h3>
-                        <p>Git, GitHub, VS Code, IntelliJ, flujo de trabajo ágil.</p>
+                        <h3 data-i18n="skills.tools">Herramientas</h3>
+                        <p data-i18n="skills.toolsText">Git, GitHub, VS Code, IntelliJ, flujo de trabajo ágil.</p>
                     </article>
                 </div>
             </div>
@@ -108,29 +130,29 @@
         <section id="proyectos" class="section">
             <div class="container reveal">
                 <div class="section-title center">
-                    <p class="section-tag">Proyectos</p>
-                    <h2>Experiencias con enfoque técnico y real.</h2>
+                    <p class="section-tag" data-i18n="projects.tag">Proyectos</p>
+                    <h2 data-i18n="projects.title">Experiencias con enfoque técnico y real.</h2>
                 </div>
 
                 <div class="projects-grid">
                     <article class="project-card">
-                        <h3>Sierra Dorada</h3>
-                        <p>E-commerce artesanal para cerveza con operaciones CRUD y gestión administrativa.</p>
+                        <h3 data-i18n="projects.items.0.title">Sierra Dorada</h3>
+                        <p data-i18n="projects.items.0.desc">E-commerce artesanal para cerveza con operaciones CRUD y gestión administrativa.</p>
                     </article>
 
                     <article class="project-card">
-                        <h3>NASA APOD API</h3>
-                        <p>Consumo de una API pública usando Fetch y JavaScript asíncrono.</p>
+                        <h3 data-i18n="projects.items.1.title">NASA APOD API</h3>
+                        <p data-i18n="projects.items.1.desc">Consumo de una API pública usando Fetch y JavaScript asíncrono.</p>
                     </article>
 
                     <article class="project-card">
-                        <h3>Hackathon Project</h3>
-                        <p>Proyecto colaborativo desarrollado durante el hackathon de Generation.</p>
+                        <h3 data-i18n="projects.items.2.title">Hackathon Project</h3>
+                        <p data-i18n="projects.items.2.desc">Proyecto colaborativo desarrollado durante el hackathon de Generation.</p>
                     </article>
 
                     <article class="project-card">
-                        <h3>Web Storage Lab</h3>
-                        <p>Implementación de LocalStorage y SessionStorage para persistencia de datos.</p>
+                        <h3 data-i18n="projects.items.3.title">Web Storage Lab</h3>
+                        <p data-i18n="projects.items.3.desc">Implementación de LocalStorage y SessionStorage para persistencia de datos.</p>
                     </article>
                 </div>
             </div>
@@ -139,8 +161,8 @@
         <section id="experiencia" class="section section-soft">
             <div class="container reveal">
                 <div class="section-title center">
-                    <p class="section-tag">Experiencia</p>
-                    <h2>Trayectoria técnica y de soporte.</h2>
+                    <p class="section-tag" data-i18n="experience.tag">Experiencia</p>
+                    <h2 data-i18n="experience.title">Trayectoria técnica y de soporte.</h2>
                 </div>
 
                 <div class="timeline">
@@ -171,17 +193,45 @@
             </div>
         </section>
 
+        <section class="section stats-section">
+            <div class="container reveal">
+                <div class="section-title center">
+                    <p class="section-tag" data-i18n="stats.title">Impacto y crecimiento</p>
+                    <h2>Progress in motion.</h2>
+                </div>
+
+                <div class="stats-grid">
+                    <article class="stat-card">
+                        <span class="counter" data-target="12">0</span>
+                        <p data-i18n="stats.projects">Projects completed</p>
+                    </article>
+
+                    <article class="stat-card">
+                        <span class="counter" data-target="8">0</span>
+                        <p data-i18n="stats.technologies">Technologies learned</p>
+                    </article>
+
+                    <article class="stat-card">
+                        <span class="counter" data-target="3">0</span>
+                        <p data-i18n="stats.years">Years of experience</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
         <section id="reflexion" class="section">
             <div class="container section-inner reveal">
                 <div class="section-title">
-                    <p class="section-tag">Reflexión</p>
-                    <h2>Aprendizaje constante, disciplina y curiosidad.</h2>
+                    <p class="section-tag" data-i18n="reflection.tag">Reflexión</p>
+                    <h2 data-i18n="reflection.title">Aprendizaje constante, disciplina y curiosidad.</h2>
                 </div>
 
                 <div class="content-card quote-card">
-                    <p>
-                        Durante este bootcamp aprendí no solo habilidades técnicas, sino también disciplina, trabajo en equipo y resolución de problemas.
-                        Aún tengo mucho por mejorar, especialmente en backend, pero me comprometo a dominar Java, Spring Boot y soluciones escalables.
+                    <p data-i18n="reflection.p">
+                        Durante este bootcamp aprendí no solo habilidades técnicas, sino también disciplina, trabajo en
+                        equipo y resolución de problemas.
+                        Aún tengo mucho por mejorar, especialmente en backend, pero me comprometo a dominar Java, Spring
+                        Boot y soluciones escalables.
                         Este camino me ha demostrado que el crecimiento viene de la constancia y la curiosidad.
                     </p>
                 </div>
@@ -190,10 +240,11 @@
 
         <section id="contacto" class="section section-soft">
             <div class="container contact-box reveal">
-                <p class="section-tag">Contacto</p>
-                <h2>Hablemos de tu próximo proyecto.</h2>
-                <p class="contact-email">juanesoviedoestepa@gmail.com</p>
-                <a href="mailto:juanesoviedoestepa@gmail.com" class="btn btn-accent">Contactar</a>
+                <p class="section-tag" data-i18n="contact.tag">Contacto</p>
+                <h2 data-i18n="contact.title">Hablemos de tu próximo proyecto.</h2>
+                <p class="contact-email" data-i18n="contact.email">juanesoviedoestepa@gmail.com</p>
+                <a href="mailto:juanesoviedoestepa@gmail.com?subject=Professional%20Opportunity&body=Hello%20Juan,%0A%0AI%20would%20like%20to%20contact%20you%20regarding%20an%20opportunity.%0A%0ABest%20regards,%0A"
+                    class="btn btn-accent contact-btn" data-i18n="contact.button">Contactame</a>
             </div>
         </section>
     </main>
@@ -204,6 +255,11 @@
         </div>
     </footer>
 
+    <button id="scrollTopBtn" class="scroll-top-btn" type="button" aria-label="Volver arriba">
+        <span>↑</span>
+    </button>
+
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 
