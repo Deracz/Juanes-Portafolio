@@ -40,10 +40,10 @@ function setTheme(theme) {
         const translations = window.translations?.[currentLanguage] || window.translations?.en;
         if (theme === 'dark') {
             themeIcon.textContent = '🌙';
-            themeLabel.textContent = translations?.theme?.dark || '🌙 Dark Mode';
+            themeLabel.textContent = translations?.theme?.dark || 'Dark Mode';
         } else {
             themeIcon.textContent = '☀️';
-            themeLabel.textContent = translations?.theme?.light || '☀️ Light Mode';
+            themeLabel.textContent = translations?.theme?.light || 'Light Mode';
         }
     }
     localStorage.setItem('portfolio-theme', theme);
